@@ -1,0 +1,48 @@
+@import "../src/common/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: $primary-color;
+}
+.container {
+  margin: 0 40px;
+}
+
+@media (max-width: 767px) {
+  /* Styles for screens up to 767px wide */
+  .movie-section { 
+    /* Example mobile styles */
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .movie-title {
+    /* Example mobile styles */
+    font-size: 30px;
+  }
+  .poster{
+    margin-top: 20px
+  }
+}
+
+/* Styles for screens between 768px and 991px wide (common tablet sizes) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .movie-section {
+    /* Example tablet styles */
+    padding: 30px 0px;
+  }
+
+  /* Example tablet styles */
+  .movie-title {
+    font-size: 36px;
+  }
+  
+}
